@@ -22,6 +22,7 @@
 		F58508B718CF6D94009330F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F58508B518CF6D94009330F9 /* InfoPlist.strings */; };
 		F58508B918CF6D94009330F9 /* AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F58508B818CF6D94009330F9 /* AdventureTests.m */; };
 		F58508C318CF6E21009330F9 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58508C218CF6E21009330F9 /* CheckMate.framework */; };
+		F58508C618CF788B009330F9 /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58508C518CF788B009330F9 /* DestinationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		F58508B618CF6D94009330F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F58508B818CF6D94009330F9 /* AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdventureTests.m; sourceTree = "<group>"; };
 		F58508C218CF6E21009330F9 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../CheckMate.framework; sourceTree = "<group>"; };
+		F58508C418CF788B009330F9 /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
+		F58508C518CF788B009330F9 /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				F58508A318CF6D94009330F9 /* ViewController.m */,
 				F58508A518CF6D94009330F9 /* Images.xcassets */,
 				F585089418CF6D94009330F9 /* Supporting Files */,
+				F58508C418CF788B009330F9 /* DestinationViewController.h */,
+				F58508C518CF788B009330F9 /* DestinationViewController.m */,
 			);
 			path = Adventure;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				F58508A418CF6D94009330F9 /* ViewController.m in Sources */,
 				F585089E18CF6D94009330F9 /* AppDelegate.m in Sources */,
 				F585089A18CF6D94009330F9 /* main.m in Sources */,
+				F58508C618CF788B009330F9 /* DestinationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
