@@ -73,13 +73,77 @@
                     <view key="view" contentMode="scaleToFill" id="GFq-HK-UNz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Mmm cheesie cardboard" translatesAutoresizingMaskIntoConstraints="NO" id="WwL-55-lx4">
+                                <rect key="frame" x="20" y="85" width="280" height="359"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgE-SO-ND5">
+                                <rect key="frame" x="20" y="492" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back to bed">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="z3f-pb-ib0" kind="push" id="kwA-aC-1is"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl9-vr-W9J">
+                                <rect key="frame" x="230" y="492" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to pub">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fo2-tS-Yyn" kind="push" id="Xsq-hA-GFU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w5t-Ao-sAX" firstAttribute="top" secondItem="LgE-SO-ND5" secondAttribute="bottom" constant="46" id="4sz-VU-YQs"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vl9-vr-W9J" secondAttribute="trailing" constant="20" id="ABz-do-ehU"/>
+                            <constraint firstAttribute="trailing" secondItem="vl9-vr-W9J" secondAttribute="trailing" constant="20" id="Bor-Z2-Mra"/>
+                            <constraint firstItem="w5t-Ao-sAX" firstAttribute="top" secondItem="vl9-vr-W9J" secondAttribute="bottom" constant="46" id="Hvy-WY-Mec"/>
+                            <constraint firstItem="LgE-SO-ND5" firstAttribute="leading" secondItem="GFq-HK-UNz" secondAttribute="leading" constant="20" id="KFE-nP-5QX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lxo-tV-wrn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDb-0l-AT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="819"/>
+            <point key="canvasLocation" x="1443" y="818"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yWv-52-Loz">
+            <objects>
+                <viewController id="fo2-tS-Yyn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nGX-eQ-xlp"/>
+                        <viewControllerLayoutGuide type="bottom" id="bex-fO-rnw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oBu-PE-NXg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets stomach pumped. The end." translatesAutoresizingMaskIntoConstraints="NO" id="auV-hC-mTf">
+                                <rect key="frame" x="20" y="65" width="280" height="378"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HFh-lp-B2F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSf-3X-XSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="818"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uQ9-hM-ue0">
@@ -92,13 +156,74 @@
                     <view key="view" contentMode="scaleToFill" id="lGG-t5-Las">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gen-fZ-BVb">
+                                <rect key="frame" x="20" y="494" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Back to bed">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fo2-tS-Yyn" kind="push" id="OO1-2c-AKj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddk-kO-uHk">
+                                <rect key="frame" x="230" y="494" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to pub">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="z3f-pb-ib0" kind="push" id="pYc-4i-nHq"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Your place is disgustingly clean" translatesAutoresizingMaskIntoConstraints="NO" id="5pr-vN-KP8">
+                                <rect key="frame" x="20" y="126" width="280" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gen-fZ-BVb" firstAttribute="leading" secondItem="lGG-t5-Las" secondAttribute="leading" constant="20" id="Jrg-cj-DfR"/>
+                            <constraint firstItem="77I-sB-JSl" firstAttribute="top" secondItem="Gen-fZ-BVb" secondAttribute="bottom" constant="44" id="Tzb-JB-wUI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HM0-cr-pfW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDb-Yg-WR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1443" y="87"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bdo-vd-4my">
+            <objects>
+                <viewController id="z3f-pb-ib0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w3X-n5-6lE"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRh-F9-wgz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XmC-Np-3Hh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets married with four children. The end." translatesAutoresizingMaskIntoConstraints="NO" id="B13-gr-ChH">
+                                <rect key="frame" x="20" y="62" width="280" height="299"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Qm-ow-CuL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tgd-ga-UwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qGv-Aj-Vov">
@@ -124,4 +249,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="pYc-4i-nHq"/>
+        <segue reference="OO1-2c-AKj"/>
+    </inferredMetricsTieBreakers>
 </document>
