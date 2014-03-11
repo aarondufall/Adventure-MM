@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *eatBoxButton;
 @property (weak, nonatomic) IBOutlet UIButton *cleanBoxButton;
 
+
+
 @end
 
 @implementation ViewController

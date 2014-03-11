@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes." translatesAutoresizingMaskIntoConstraints="NO" id="Uu4-Bj-Owq">
-                                <rect key="frame" x="20" y="64" width="280" height="377"/>
+                                <rect key="frame" x="20" y="65" width="280" height="149"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -51,6 +51,13 @@
                                     <constraint firstAttribute="height" constant="128" id="ymQ-yA-zoT"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uKU-dA-Uho">
+                                <rect key="frame" x="40" y="189" width="240" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -68,6 +75,7 @@
                     <connections>
                         <outlet property="cleanBoxButton" destination="yU1-aK-GAY" id="KOo-1b-5ZK"/>
                         <outlet property="eatBoxButton" destination="V8P-ZO-v1Q" id="pcO-SY-Mtu"/>
+                        <outlet property="lastEndingTextView" destination="uKU-dA-Uho" id="m96-2i-uIe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -139,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="1443" y="818"/>
         </scene>
-        <!--View Controller-->
+        <!--Destination View Controller-->
         <scene sceneID="yWv-52-Loz">
             <objects>
-                <viewController id="fo2-tS-Yyn" sceneMemberID="viewController">
+                <viewController id="fo2-tS-Yyn" customClass="DestinationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nGX-eQ-xlp"/>
                         <viewControllerLayoutGuide type="bottom" id="bex-fO-rnw"/>
@@ -162,16 +170,36 @@
                                 <rect key="frame" x="40" y="315" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4c-0n-LcJ">
+                                <rect key="frame" x="140" y="492" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="unwindFromDestinationViewController:" destination="fo2-tS-Yyn" eventType="touchUpInside" id="m7K-tk-iyD"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kYx-p5-LrJ">
+                                <rect key="frame" x="150" y="502" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="d7c-oO-QPW" firstAttribute="leading" secondItem="oBu-PE-NXg" secondAttribute="leading" constant="40" id="Sxp-xd-ePQ"/>
                             <constraint firstItem="d7c-oO-QPW" firstAttribute="centerX" secondItem="oBu-PE-NXg" secondAttribute="centerX" id="ciy-dI-BLX"/>
+                            <constraint firstItem="bex-fO-rnw" firstAttribute="top" secondItem="L4c-0n-LcJ" secondAttribute="bottom" constant="46" id="m1M-RI-e5U"/>
                             <constraint firstItem="d7c-oO-QPW" firstAttribute="top" secondItem="nGX-eQ-xlp" secondAttribute="bottom" constant="251" id="oF3-FO-V4o"/>
                             <constraint firstItem="bex-fO-rnw" firstAttribute="top" secondItem="d7c-oO-QPW" secondAttribute="bottom" constant="125" id="vkB-q6-QqG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HFh-lp-B2F"/>
+                    <connections>
+                        <outlet property="storyEndingTextView" destination="auV-hC-mTf" id="iuc-a8-lC9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSf-3X-XSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="1443" y="87"/>
         </scene>
-        <!--View Controller-->
+        <!--Destination View Controller-->
         <scene sceneID="bdo-vd-4my">
             <objects>
-                <viewController id="z3f-pb-ib0" sceneMemberID="viewController">
+                <viewController id="z3f-pb-ib0" customClass="DestinationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w3X-n5-6lE"/>
                         <viewControllerLayoutGuide type="bottom" id="CRh-F9-wgz"/>
@@ -262,6 +290,16 @@
                                 <rect key="frame" x="40" y="269" width="240" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkH-Xm-vz4">
+                                <rect key="frame" x="137" y="492" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="unwindFromDestinationViewController:" destination="z3f-pb-ib0" eventType="touchUpInside" id="Q61-Y7-Mw9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -269,9 +307,13 @@
                             <constraint firstItem="CRh-F9-wgz" firstAttribute="top" secondItem="smT-bC-D6B" secondAttribute="bottom" constant="71" id="Ei2-d5-y2t"/>
                             <constraint firstItem="smT-bC-D6B" firstAttribute="centerX" secondItem="XmC-Np-3Hh" secondAttribute="centerX" id="Thm-ra-piP"/>
                             <constraint firstItem="smT-bC-D6B" firstAttribute="leading" secondItem="XmC-Np-3Hh" secondAttribute="leading" constant="40" id="WcM-fe-dOW"/>
+                            <constraint firstItem="CRh-F9-wgz" firstAttribute="top" secondItem="YkH-Xm-vz4" secondAttribute="bottom" constant="46" id="cPz-Wz-hQR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8Qm-ow-CuL"/>
+                    <connections>
+                        <outlet property="storyEndingTextView" destination="B13-gr-ChH" id="VMu-vJ-TMy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgd-ga-UwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

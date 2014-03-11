@@ -7,8 +7,10 @@
 //
 
 #import "DestinationViewController.h"
+#import "ViewController.h"
 
 @interface DestinationViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *storyEndingTextView;
 
 @end
 
@@ -34,5 +36,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)unwindFromDestinationViewController:(UIStoryboardSegue *)sender {
+    [self dismissViewControllerAnimated:NO completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    ViewController *rootView = self.navigationController.viewControllers[0];
+    
+    rootView.lastEndingTextView.text = [NSString stringWithFormat:@"Your Last ending was: %@", self.storyEndingTextView.text];
+}
+
+
 
 @end
